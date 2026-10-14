@@ -1,0 +1,1032 @@
+/* STYLE GÉNÉRAL */
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* EN-TÊTE */
+
+header {
+    padding: 80px 20px;
+}
+
+/* TITRE PRINCIPAL */
+
+h1 {
+    color: #d4af37;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+/* SLOGAN */
+
+header p {
+    color: #eeeeee;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* MENU DE NAVIGATION */
+
+nav {
+    background-color: #111111;
+    padding: 20px 10px;
+    border-bottom: 1px solid #d4af37;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* SECTION NOS UNIVERS */
+
+#univers {
+    padding: 60px 20px;
+}
+
+#univers h2 {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.intro {
+    max-width: 650px;
+    margin: 20px auto 35px;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+.univers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.univers-card {
+    background-color: #151515;
+    border: 1px solid #40351b;
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.univers-card h3 {
+    color: #d4af37;
+}
+
+.univers-card p {
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+.univers-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+/* ADAPTATION AUX PETITS ÉCRANS */
+
+@media (max-width: 700px) {
+    .univers-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SECTION À PROPOS */
+
+#apropos {
+    background-color: #111111;
+    padding: 70px 20px;
+    margin-top: 40px;
+}
+
+#apropos h2 {
+    color: #d4af37;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#apropos p {
+    max-width: 750px;
+    margin: 18px auto;
+    line-height: 1.8;
+    color: #dddddd;
+}
+
+#apropos h3 {
+    color: #d4af37;
+    margin-top: 40px;
+}
+
+.valeurs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.valeurs span {
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+    padding: 12px 18px;
+    color: #ffffff;
+}
+
+#apropos .signature {
+    color: #d4af37;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+/* SECTION E-BOOKS */
+
+#ebooks {
+    padding: 70px 20px;
+}
+
+#ebooks h2 {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.ebooks-intro {
+    max-width: 700px;
+    margin: 20px auto 40px;
+    color: #dddddd;
+    line-height: 1.8;
+}
+
+.ebooks-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ebook-card {
+    background-color: #151515;
+    border: 1px solid #40351b;
+    border-radius: 15px;
+    padding: 30px 25px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.ebook-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.ebook-icon {
+    font-size: 45px;
+}
+
+.ebook-card h3 {
+    color: #d4af37;
+    font-size: 23px;
+}
+
+.ebook-card p {
+    color: #dddddd;
+    line-height: 1.7;
+}
+
+.ebook-card .ebook-status {
+    color: #d4af37;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.ebook-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+    color: #d4af37;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ebook-button:hover {
+    background-color: #d4af37;
+    color: #0b0b0b;
+}
+
+/* ADAPTATION AUX TÉLÉPHONES */
+
+@media (max-width: 700px) {
+    .ebooks-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SECTION BOUTIQUE */
+
+#boutique {
+    background-color: #111111;
+    padding: 70px 20px;
+}
+
+#boutique h2 {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.boutique-intro {
+    max-width: 700px;
+    margin: 20px auto 40px;
+    line-height: 1.8;
+    color: #dddddd;
+}
+
+.boutique-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.produit-card {
+    background-color: #0b0b0b;
+    border: 1px solid #40351b;
+    border-radius: 15px;
+    padding: 25px 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.produit-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.produit-icon {
+    font-size: 42px;
+}
+
+.produit-card h3 {
+    color: #d4af37;
+}
+
+.produit-card p {
+    color: #dddddd;
+    line-height: 1.7;
+}
+
+.produit-status {
+    display: inline-block;
+    margin-top: 12px;
+    color: #d4af37;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.produit-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 16px;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+    color: #d4af37;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.produit-button:hover {
+    background-color: #d4af37;
+    color: #0b0b0b;
+}
+
+/* AFFICHAGE SUR PETIT ÉCRAN */
+
+@media (max-width: 700px) {
+    .boutique-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SECTION BLOG */
+
+#blog {
+    padding: 70px 20px;
+}
+
+#blog h2 {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.blog-intro {
+    max-width: 700px;
+    margin: 20px auto 40px;
+    color: #dddddd;
+    line-height: 1.8;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: #151515;
+    border: 1px solid #40351b;
+    border-radius: 15px;
+    padding: 25px 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.blog-icon {
+    font-size: 38px;
+}
+
+.blog-card h3 {
+    color: #d4af37;
+}
+
+.blog-card p {
+    color: #dddddd;
+    line-height: 1.7;
+}
+
+.blog-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 18px;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+    color: #d4af37;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.blog-button:hover {
+    background-color: #d4af37;
+    color: #0b0b0b;
+}
+
+/* LECTURE DES ARTICLES */
+
+.article-detail {
+    display: none;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 25px;
+    background-color: #111111;
+    border: 1px solid #40351b;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.article-detail:target {
+    display: block;
+}
+
+.article-detail h2 {
+    color: #d4af37;
+    text-align: center;
+}
+
+.article-detail p {
+    color: #eeeeee;
+    line-height: 1.9;
+}
+
+.article-detail .article-phrase {
+    color: #d4af37;
+    font-style: italic;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* ADAPTATION AUX TÉLÉPHONES */
+
+@media (max-width: 700px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .article-detail {
+        margin: 25px 15px;
+        padding: 25px 18px;
+    }
+}
+
+/* SECTION CONTACT */
+
+#contact {
+    padding: 70px 20px;
+    background-color: #0b0b0b;
+}
+
+#contact h2 {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.contact-intro {
+    max-width: 650px;
+    margin: 20px auto 35px;
+    color: #dddddd;
+    line-height: 1.8;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    color: #d4af37;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    background-color: #151515;
+    border: 1px solid #40351b;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid #d4af37;
+    border-color: #d4af37;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 14px 20px;
+    background-color: #d4af37;
+    color: #0b0b0b;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #f0d778;
+}
+
+.contact-note {
+    margin-top: 35px;
+    color: #d4af37;
+    font-style: italic;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    background-color: #111111;
+    border-top: 1px solid #d4af37;
+    padding: 45px 20px 25px;
+    text-align: center;
+}
+
+.footer-logo {
+    color: #d4af37;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-slogan {
+    color: #dddddd;
+    margin: 15px 0 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 25px auto;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
+
+.footer-values {
+    color: #d4af37;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 25px auto;
+}
+
+.copyright {
+    color: #999999;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+/* PIED DE PAGE SUR PETIT ÉCRAN */
+
+@media (max-width: 700px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* MENU ADAPTÉ AUX PETITS ÉCRANS */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+
+nav a {
+    margin: 0;
+}
+
+/* FINITIONS SUR TÉLÉPHONE */
+
+@media (max-width: 600px) {
+    header {
+        padding: 55px 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    nav {
+        gap: 16px;
+        padding: 18px 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #univers h2,
+    #apropos h2,
+    #ebooks h2,
+    #boutique h2,
+    #blog h2,
+    #contact h2 {
+        font-size: 27px;
+    }
+}
+
+/* FINITIONS GÉNÉRALES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #d4af37;
+    outline-offset: 4px;
+}
+
+::selection {
+    background-color: #d4af37;
+    color: #0b0b0b;
+}
+
+/* CARTES ÉLÉGANTES — REFLET LUNAIRE */
+
+.card,
+.univers-card,
+.ebook-card,
+.product-card,
+.blog-card {
+    background: linear-gradient(
+        145deg,
+        #171717,
+        #0b0b0b
+    );
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 16px;
+    padding: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* EFFET AU SURVOL */
+
+.card:hover,
+.univers-card:hover,
+.ebook-card:hover,
+.product-card:hover,
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.10);
+}
+
+/* JOURNAL LUNAIRE */
+
+#journal {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+
+#journal textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    background: #171717;
+    color: #ffffff;
+    font: inherit;
+    resize: vertical;
+}
+
+#journal button {
+    background: #d4af37;
+    color: #0b0b0b;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#journal button:hover {
+    background: #f0d77a;
+}
+
+#journalMessage {
+    color: #d4af37;
+    line-height: 1.6;
+}
+
+#compteurJournal {
+    color: #bbbbbb;
+    font-size: 13px;
+    text-align: right;
+    margin-top: -10px;
+}
+
+#journal button + button {
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    #journal button {
+        margin: 5px 0;
+        max-width: 100%;
+    }
+
+    #journal button + button {
+        margin-left: 0;
+    }
+}
+
+/* OBJECTIFS PERSONNELS */
+
+#objectifs {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+
+#formObjectifs input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 15px 0;
+    padding: 13px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: #171717;
+    color: white;
+    font: inherit;
+}
+
+#objectifs button {
+    padding: 11px 16px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: #d4af37;
+    color: #0b0b0b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#listeObjectifs {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+#listeObjectifs li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    padding: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 10px;
+    background: #171717;
+}
+
+#listeObjectifs li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+#listeObjectifs li span.termine {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#listeObjectifs input[type="checkbox"] {
+    accent-color: #d4af37;
+}
+
+#listeObjectifs button {
+    background: transparent;
+    color: #d4af37;
+}
+
+#messageObjectifs {
+    color: #d4af37;
+}
+
+@media (max-width: 600px) {
+    #objectifs {
+        padding: 25px 15px;
+    }
+
+    #listeObjectifs li {
+        padding: 12px;
+    }
+}
+
+/* BARRE DE PROGRESSION */
+
+.progression-conteneur {
+    margin: 25px 0;
+    text-align: left;
+}
+
+#barreObjectifs {
+    display: block;
+    width: 100%;
+    height: 14px;
+    margin-top: 12px;
+    accent-color: #d4af37;
+}
+
+#progressionObjectifs {
+    color: #d4af37;
+    font-size: 14px;
+}
+
+/* MENU INTERACTIF */
+
+#menuToggle {
+    display: none;
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#menuLiens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+
+#menuLiens a {
+    margin: 0;
+}
+
+/* VERSION TÉLÉPHONE */
+
+@media (max-width: 600px) {
+    #menuPrincipal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #menuToggle {
+        display: inline-block;
+    }
+
+    #menuLiens {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #menuLiens.ouvert {
+        display: flex;
+    }
+}
+
+.recherche-blog {
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.recherche-blog label {
+    display: block;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+#rechercheArticles {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background-color: #171717;
+    color: white;
+    font-size: 16px;
+}
+
+#rechercheArticles:focus {
+    outline: 2px solid #d4af37;
+    outline-offset: 3px;
+}
+
+#resultatRecherche {
+    color: #d4af37;
+    font-size: 14px;
+}
+
+#retourHaut {
+    display: block;
+    margin: 35px auto;
+    padding: 12px 20px;
+    background-color: #0b0b0b;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#retourHaut:hover {
+    background-color: #29230f;
+}
+
+html {
+    scroll-behavior: auto !important;
+}
+
+/* FORMULAIRE DE CONTACT — REFLET LUNAIRE */
+
+#contact form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #111111;
+    border: 1px solid #d4af37;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact form label {
+    color: #d4af37;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 6px rgba(212, 175, 55, 0.35);
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #aaaaaa;
+}
+
+#contact form button {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: #d4af37;
+    color: #0b0b0b;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #f0d675;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    #contact form {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+}

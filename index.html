@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reflet Lunaire | Chaque jour, une meilleure version de toi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav id="menuPrincipal">
+    <button
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menuLiens"
+    >
+        ☰ Menu
+    </button>
+
+    <div id="menuLiens">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#blog">Blog</a>
+        <a href="#ebooks">E-books</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+    <header id="accueil">
+    <h1>Reflet Lunaire 🌙</h1>
+    <p>Chaque jour, une meilleure version de toi.</p>
+    
+<button id="messageBtn">Révéler ma lumière ✨</button>
+<p id="message"></p>
+
+<button id="penseeBtn">Une pensée pour moi 🌙</button>
+<p id="pensee"></p>
+
+</header>
+
+<section id="univers">
+    <h2>Nos univers</h2>
+
+    <p class="intro">
+        Explore les univers qui t'aideront à grandir,
+        à apprendre et à révéler ta lumière intérieure.
+    </p>
+
+    <div class="univers-container">
+
+        <article class="univers-card">
+            <h3>🌷 Beauté naturelle</h3>
+            <p>Apprends à prendre soin de toi avec douceur.</p>
+        </article>
+
+        <article class="univers-card">
+            <h3>🧠 Développement personnel</h3>
+            <p>Construis de meilleures habitudes chaque jour.</p>
+        </article>
+
+        <article class="univers-card">
+            <h3>📚 Connaissance</h3>
+            <p>Découvre, apprends et développe tes compétences.</p>
+        </article>
+
+        <article class="univers-card">
+            <h3>📝 Organisation</h3>
+            <p>Organise tes journées et avance vers tes objectifs.</p>
+        </article>
+
+        <article class="univers-card">
+            <h3>🤍 Bien-être</h3>
+            <p>Accorde-toi du temps et respecte ton rythme.</p>
+        </article>
+
+        <article class="univers-card">
+            <h3>🙏 Foi et spiritualité</h3>
+            <p>Nourris ta foi et avance avec confiance.</p>
+        </article>
+
+    </div>
+</section>
+
+<section id="apropos">
+    <h2>À propos de Reflet Lunaire</h2>
+
+    <p class="apropos-intro">
+        Reflet Lunaire est un espace dédié à l'évolution personnelle,
+        à la connaissance de soi et au bien-être.
+    </p>
+
+    <p>
+        Nous croyons que chaque personne peut évoluer à son rythme,
+        apprendre chaque jour et construire une vie qui lui ressemble.
+    </p>
+
+    <p>
+        Ici, pas de comparaison ni de pression pour être parfait.
+        L'essentiel est de progresser, un pas à la fois.
+    </p>
+
+    <h3>Nos valeurs</h3>
+
+    <div class="valeurs">
+        <span>🤍 Bienveillance</span>
+        <span>🌱 Évolution continue</span>
+        <span>✨ Discipline</span>
+        <span>📚 Connaissance</span>
+        <span>🌙 Authenticité</span>
+        <span>🕊️ Calme et respect</span>
+    </div>
+
+    <p class="signature">
+        « Révèle ta lumière intérieure. »
+    </p>
+</section>
+
+<section id="journal">
+    <h2>Mon journal lunaire 🌙</h2>
+
+    <p>Un espace pour réfléchir, grandir et avancer à ton rythme.</p>
+
+    <label for="journalTexte">Qu'aimerais-tu écrire aujourd'hui ?</label>
+
+<textarea
+    id="journalTexte"
+    rows="5"
+    maxlength="2000"
+    placeholder="Mes pensées, mes objectifs, mes gratitudes..."
+></textarea>
+
+<p id="compteurJournal">0 / 2000 caractères</p>
+
+<button id="sauverJournal">Enregistrer mon texte</button>
+
+<button id="effacerJournal">Effacer mon texte</button>
+
+<p id="journalMessage" aria-live="polite"></p>
+
+</section>
+
+<section id="objectifs">
+    <h2>Mes objectifs 🌟</h2>
+
+    <p>Chaque petit pas compte. Avance à ton rythme.</p>
+
+    <form id="formObjectifs">
+        <label for="nouvelObjectif">Mon prochain objectif :</label>
+
+        <input
+            type="text"
+            id="nouvelObjectif"
+            maxlength="120"
+            placeholder="Ex. : apprendre JavaScript"
+            required
+        >
+
+        <button type="submit">Ajouter mon objectif</button>
+    </form>
+
+<div class="progression-conteneur">
+    <label for="barreObjectifs">Ma progression</label>
+
+    <progress id="barreObjectifs" value="0" max="100"></progress>
+
+    <p id="progressionObjectifs">0 % accompli</p>
+</div>
+
+    <ul id="listeObjectifs"></ul>
+
+    <p id="messageObjectifs" aria-live="polite"></p>
+</section>
+
+<section id="ebooks">
+    <h2>Nos E-books</h2>
+
+    <p class="ebooks-intro">
+        Des guides pour t'accompagner dans ton évolution,
+        ton organisation et ton développement personnel.
+    </p>
+
+    <div class="ebooks-container">
+
+        <article class="ebook-card">
+            <div class="ebook-icon">🌷</div>
+            <h3>Guide Féminin</h3>
+
+            <p>
+                Un guide consacré au bien-être, aux habitudes,
+                à l'organisation et à l'évolution personnelle.
+            </p>
+
+            <p class="ebook-status">Bientôt disponible</p>
+
+            <a href="#contact" class="ebook-button">
+                Être informée
+            </a>
+        </article>
+
+        <article class="ebook-card">
+            <div class="ebook-icon">🌙</div>
+            <h3>Reflet Lunaire Homme</h3>
+
+            <p>
+                Un guide autour de la discipline, de la foi,
+                de la connaissance de soi et des objectifs.
+            </p>
+
+            <p class="ebook-status">Bientôt disponible</p>
+
+            <a href="#contact" class="ebook-button">
+                Être informé
+            </a>
+        </article>
+
+    </div>
+</section>
+
+<section id="boutique">
+    <h2>La Boutique Lunaire</h2>
+
+    <p class="boutique-intro">
+        Découvre bientôt une sélection de créations
+        pensées pour accompagner ton évolution.
+    </p>
+
+    <div class="boutique-container">
+
+        <article class="produit-card">
+            <div class="produit-icon">📓</div>
+            <h3>Journaux & carnets</h3>
+            <p>
+                Des espaces pour écrire tes pensées,
+                organiser tes journées et suivre tes objectifs.
+            </p>
+            <span class="produit-status">Bientôt disponible</span>
+        </article>
+
+        <article class="produit-card">
+            <div class="produit-icon">✨</div>
+            <h3>Accessoires inspirants</h3>
+            <p>
+                Des créations choisies pour célébrer
+                l'authenticité et l'évolution personnelle.
+            </p>
+            <span class="produit-status">Bientôt disponible</span>
+        </article>
+
+        <article class="produit-card">
+            <div class="produit-icon">📚</div>
+            <h3>Guides numériques</h3>
+            <p>
+                Des ressources pour apprendre,
+                s'organiser et développer ses habitudes.
+            </p>
+            <a class="produit-button" href="#ebooks">
+                Découvrir les E-books
+            </a>
+        </article>
+
+    </div>
+</section>
+
+<section id="blog">
+    <h2>Le Blog Lunaire</h2>
+
+<div class="recherche-blog">
+    <label for="rechercheArticles">Rechercher un article</label>
+    <input
+        type="search"
+        id="rechercheArticles"
+        placeholder="Ex. : discipline, confiance, évolution..."
+    >
+    <p id="resultatRecherche" aria-live="polite"></p>
+</div>
+
+    <p class="blog-intro">
+        Des conseils, des réflexions et des inspirations
+        pour t'accompagner dans ton évolution.
+    </p>
+
+    <div class="blog-container">
+
+        <article class="blog-card">
+            <span class="blog-icon">🌱</span>
+
+            <h3>Commencer son évolution</h3>
+
+            <p>
+                Chaque transformation commence par une décision :
+                celle de vouloir apprendre, avancer et grandir.
+            </p>
+
+            <a href="#article-evolution" class="blog-button">
+                Lire l'article
+            </a>
+        </article>
+
+        <article class="blog-card">
+            <span class="blog-icon">🧠</span>
+
+            <h3>Évoluer sans se comparer</h3>
+
+            <p>
+                Ton parcours est unique. Apprends à avancer
+                à ton rythme, sans mesurer ta valeur à celle des autres.
+            </p>
+
+            <a href="#article-comparaison" class="blog-button">
+                Lire l'article
+            </a>
+        </article>
+
+        <article class="blog-card">
+            <span class="blog-icon">🤍</span>
+
+            <h3>Prendre soin de soi sans pression</h3>
+
+            <p>
+                Le bien-être ne demande pas la perfection,
+                mais de l'écoute, de la patience et de la douceur.
+            </p>
+
+            <a href="#article-bienetre" class="blog-button">
+                Lire l'article
+            </a>
+        </article>
+
+    </div>
+</section>
+
+<!-- ARTICLE 1 -->
+
+<section class="article-detail" id="article-evolution">
+    <h2>🌱 Commencer son évolution</h2>
+
+    <p>
+        L'évolution personnelle ne commence pas lorsque tout est parfait.
+        Elle commence lorsque tu décides de faire un premier pas.
+    </p>
+
+    <p>
+        Tu peux commencer par apprendre quelque chose de nouveau,
+        organiser tes journées, lire quelques pages ou prendre
+        le temps de réfléchir à tes objectifs.
+    </p>
+
+    <p>
+        Ne cherche pas à tout changer en un seul jour.
+        Les petites actions répétées peuvent t'aider à construire
+        progressivement des habitudes qui te correspondent.
+    </p>
+
+    <p class="article-phrase">
+        « Chaque jour, une meilleure version de toi. »
+    </p>
+
+    <a href="#blog" class="blog-button">← Retour au blog</a>
+</section>
+
+<!-- ARTICLE 2 -->
+
+<section class="article-detail" id="article-comparaison">
+    <h2>🧠 Évoluer sans se comparer</h2>
+
+    <p>
+        Chacun avance avec son histoire, ses possibilités,
+        ses difficultés et son propre rythme.
+    </p>
+
+    <p>
+        Tu peux admirer les progrès d'une autre personne
+        sans oublier que ton propre parcours mérite aussi
+        du temps et de l'attention.
+    </p>
+
+    <p>
+        Fixe-toi des objectifs réalistes, reconnais ce que tu apprends
+        et rappelle-toi que tu n'as pas besoin de tout réussir
+        immédiatement pour continuer à avancer.
+    </p>
+
+    <p class="article-phrase">
+        « Concentre-toi sur ton chemin, pas sur la course des autres. »
+    </p>
+
+    <a href="#blog" class="blog-button">← Retour au blog</a>
+</section>
+
+<!-- ARTICLE 3 -->
+
+<section class="article-detail" id="article-bienetre">
+    <h2>🤍 Prendre soin de soi sans pression</h2>
+
+    <p>
+        Prendre soin de soi peut commencer par des gestes simples :
+        se reposer, parler à une personne de confiance,
+        faire une activité que l'on aime ou organiser son espace.
+    </p>
+
+    <p>
+        Tu n'as pas besoin d'être productive à chaque instant.
+        Le repos et les moments de calme ont aussi leur place
+        dans une vie équilibrée.
+    </p>
+
+    <p>
+        Apprends à écouter tes besoins et à te traiter avec
+        la même patience que tu offrirais à une personne que tu apprécies.
+    </p>
+
+    <p class="article-phrase">
+        « Prends soin de toi avec douceur, pas avec pression. »
+    </p>
+
+    <a href="#blog" class="blog-button">← Retour au blog</a>
+</section>
+
+<section id="contact">
+    <h2>Entrons en contact</h2>
+
+    <p class="contact-intro">
+        Une question, une idée ou un message à partager ?
+        Nous serions ravis de te lire.
+    </p>
+
+<form action="https://formspree.io/f/xdeawykk" method="POST">
+
+    <label for="nomContact">Ton nom</label>
+    <input
+        type="text"
+        id="nomContact"
+        name="nom"
+        placeholder="Ton nom"
+        required
+    >
+
+    <label for="emailContact">Ton adresse e-mail</label>
+    <input
+        type="email"
+        id="emailContact"
+        name="email"
+        placeholder="Ton adresse e-mail"
+        required
+    >
+
+    <label for="messageContact">Ton message</label>
+    <textarea
+        id="messageContact"
+        name="message"
+        placeholder="Ton message"
+        rows="6"
+        required
+    ></textarea>
+
+    <button type="submit">Envoyer mon message</button>
+    
+<input type="hidden" name="_next"
+       value="https://TON-SITE/merci.html">
+
+</form>
+
+    <p class="contact-note">
+        Merci de faire partie de l'univers Reflet Lunaire. 🌙
+    </p>
+</section>
+
+<footer>
+    <a href="#accueil" class="footer-logo">
+        Reflet Lunaire 🌙
+    </a>
+
+    <p class="footer-slogan">
+        Chaque jour, une meilleure version de toi.
+    </p>
+
+    <div class="footer-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#blog">Blog</a>
+        <a href="#ebooks">E-books</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="footer-values">
+        Bienveillance · Discipline · Connaissance · Authenticité
+    </p>
+
+    <p class="copyright">
+        © 2026 Reflet Lunaire — Tous droits réservés.
+    </p>
+</footer>
+
+<button id="retourHaut" type="button" aria-label="Retour en haut de page">
+    ↑ Retour en haut
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

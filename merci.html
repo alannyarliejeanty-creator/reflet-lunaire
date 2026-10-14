@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Merci pour ton message — Reflet Lunaire</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #0b0b0b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .carte-merci {
+            width: 100%;
+            max-width: 650px;
+            padding: 45px 25px;
+            background-color: #111111;
+            border: 1px solid #d4af37;
+            border-radius: 18px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.12);
+        }
+
+        .lune {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #dddddd;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .signature {
+            color: #d4af37;
+            font-style: italic;
+            margin-top: 25px;
+        }
+
+        .bouton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 22px;
+            background-color: #d4af37;
+            color: #0b0b0b;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .bouton:hover {
+            background-color: #f0d675;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .carte-merci {
+                padding: 35px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="carte-merci">
+        <div class="lune" aria-hidden="true">🌙</div>
+
+        <h1>Merci pour ton message !</h1>
+
+        <p>
+            Ton message a bien été envoyé.
+            Merci d'avoir pris le temps de nous écrire.
+        </p>
+
+        <p>
+            Nous te répondrons dès que possible.
+            Que chaque jour te rapproche d'une meilleure version de toi-même.
+        </p>
+
+        <p class="signature">Reflet Lunaire — Révèle ta lumière intérieure.</p>
+
+        <a class="bouton" href="index.html">Retourner à l'accueil</a>
+    </main>
+</body>
+</html>

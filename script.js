@@ -241,5 +241,67 @@ if (retourHaut) {
     });
 }
 
+const formulaireContact = document.querySelector(
+    '#contact form'
+);
+
+const confirmationContact = document.getElementById(
+    'contact-success'
+);
+
+const erreurContact = document.getElementById(
+    'contact-error'
+);
+
+if (
+    formulaireContact &&
+    confirmationContact &&
+    erreurContact
+) {
+    formulaireContact.addEventListener(
+        'submit',
+        async function (event) {
+            event.preventDefault();
+
+            const boutonEnvoi =
+                formulaireContact.querySelector(
+                    'button[type="submit"]'
+                );
+
+            boutonEnvoi.disabled = true;
+            boutonEnvoi.textContent = 'Envoi en cours...';
+
+            confirmationContact.hidden = true;
+            erreurContact.hidden = true;
+
+            try {
+                const reponse = await fetch(
+                    formulaireContact.action,
+                    {
+                        method: 'POST',
+                        body: new FormData(formulaireContact),
+                        headers: {
+                            Accept: 'application/json'
+                        }
+                    }
+                );
+
+                if (!reponse.ok) {
+                    throw new Error('Échec de l’envoi');
+                }
+
+                confirmationContact.hidden = false;
+                formulaireContact.reset();
+            } catch (erreur) {
+                erreurContact.hidden = false;
+            } finally {
+                boutonEnvoi.disabled = false;
+                boutonEnvoi.textContent =
+                    'Envoyer mon message';
+            }
+        }
+    );
+}
+
 
 

@@ -1030,3 +1030,36 @@ html {
         margin: 20px 10px;
     }
 }
+
+/* Messages du formulaire de contact */
+#contact-success,
+#contact-error {
+    margin: 20px 0;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#contact-success {
+    color: #d4af37;
+    background-color: #17150d;
+    border: 1px solid #d4af37;
+}
+
+#contact-error {
+    color: #ffb4b4;
+    background-color: #1c1010;
+    border: 1px solid #b94a48;
+}
+
+#contact-success[hidden],
+#contact-error[hidden] {
+    display: none;
+}
+
+#contact form button:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
